@@ -13,3 +13,7 @@ if ( $x == $y ) {
     say 'false';
 }
 
+# logical value has either true or false state
+# non zero true and zero false
+# empty string false else true
+# empty array false else true

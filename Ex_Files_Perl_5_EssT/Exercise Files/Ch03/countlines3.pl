@@ -5,7 +5,13 @@ use 5.18.0;
 use warnings;
 use IO::File;
 
+# is the module
+
 main(@ARGV);
+
+# White spaces are mostly ingnored in perl
+# Even if you remove all the whitespaces in perl output wont change
+# White space code more human readable
 
 # entry point
 sub main
@@ -17,6 +23,8 @@ sub main
 
 # countlines ( filename ) - count the lines in a file
 # returns the number of lines
+# ; is used as a separator more than a terminator.But use it in every statement.
+
 sub countlines
 {
     my $filename = shift;
