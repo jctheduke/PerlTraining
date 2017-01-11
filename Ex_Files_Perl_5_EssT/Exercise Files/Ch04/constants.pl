@@ -16,3 +16,12 @@ if (TRUE) {
     say 'false';
 }
 
+# perl doesnot include constant data type
+# it inclues a pragma.
+
+# we can define list of constant between { } and defiining contants inside the list. Remember to use ; after the intiilization
+# using captial letters for contants is recommended.
+
+# instead of defiing constants.we can use fucntion as below to get the constatnt value
+sub PI2 {3.12121}
+say PI2;

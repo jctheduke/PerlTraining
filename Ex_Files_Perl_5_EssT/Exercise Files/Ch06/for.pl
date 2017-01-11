@@ -9,3 +9,6 @@ my @array = qw( one two three four five );
 for ( my $i = 0; $array[$i]; ++$i ) {
     say $array[$i];
 }
+
+# two forms of for loop in perl.This is traditional loop as in c.
+

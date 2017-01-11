@@ -37,7 +37,34 @@ say (1,2,3);
 # For that use foreach to iterate through loop
 say foreach (1,2,3);
 
+
+say foreach ("one","two","three");
+
 # quote word operator words are seperated by space
 say foreach qw( one two three four);
 
 # array is varialbe data structure.
+
+# subscript to access ther elemeent of the script
+
+#say (1,4,5,2,9)[1];
+
+my @array = (1,2,3,4,5);
+say foreach @array;
+
+# access indiviaul element of array
+# We are accessing single element thats the reasong for $ on array.
+say $array[1];
+# Arrays are mutable, updating elements of the array
+$array[1] = 10;
+say $array[1];
+
+# pushing into end of array
+push @array ,(9,12,13);
+# printing the array size
+say $#array;
+
+# pop removes the element from the end of array
+pop @array;
+say $#array;
+
