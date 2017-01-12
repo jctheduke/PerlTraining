@@ -9,5 +9,7 @@ my $filename = 'notfound.txt';
 if (-e $filename ) {
     say 'found!';
 } else {
-    say "error: $!"; 
+    my $errorstring = $!;
+    my $errornumber = $! + 0;
+    say "error  $errornumber : $errorstring"; 
 }

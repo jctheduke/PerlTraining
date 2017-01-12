@@ -6,6 +6,11 @@ use warnings;
 
 main();
 
+
+# auto flush varialbe
+$| = 1;
+
+
 sub main {
     print "What is your favorite number? ";
     my $num = <STDIN>;

@@ -9,10 +9,17 @@ my $b = 42;
 my $c = 7;
 my $d = 42;
 
-if ( $a == $b ) {
+use constant{ TRUE => 1,FALSE => ''};
+
+if ( $a == $c and $b == $d ) {
     say 'true';
 } else {
     say 'false';
 }
 
 
+# and is a logical operator and it has very low priority
+# not reverses the boolean logic
+# &&,|| can also be used.But they are generally used for shortcircuting.
+
+my $x = $a || 57;
