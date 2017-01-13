@@ -12,7 +12,18 @@ my %hash = (
     five => 'cinco'
 );
 
+
+# named hash
+# creating a ref to hash
 my $ref = \%hash;
+# de ref the hash and sorting the keys
+
+# using arrow de ref.
+$ref ->{0} = 1;
+
 foreach my $k ( sort keys %{$ref}) {
     say "$k : ${$ref}{$k}";
 }
+
+# you can use {} to anonymous ref of the hash type.
+# 

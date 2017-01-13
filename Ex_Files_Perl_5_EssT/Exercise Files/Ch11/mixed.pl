@@ -4,6 +4,9 @@
 use 5.18.0;
 use warnings;
 
+# mixed data structures
+# list of hash
+# referencing mixed array
 my $musicians = [
     { name => 'Jimi Hendrix', instrument => 'Guitar', genre => 'Rock' },
     { name => 'Miles Davis', instrument => 'Trumpet', genre => 'Jazz' },
@@ -11,6 +14,7 @@ my $musicians = [
     { name => 'Frank Zappa', instrument => 'Guitar', genre => 'Fusion' }
 ];
 
+# de-ref array of hashes. 
 foreach my $m ( @{$musicians} ) {
     say "$m->{name}: $m->{instrument}, $m->{genre}";
 }
