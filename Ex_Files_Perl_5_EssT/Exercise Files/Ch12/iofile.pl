@@ -8,7 +8,8 @@ use IO::File;
 
 my $filename = 'lines.txt';
 
-# file hangle the reference to object.
+# file handle the reference to object.
 my $file = IO::File->new("< $filename") or die "Cannot open file: $!";
 print while <$file>;
+# Technically close is not required.After closing object it closes the file automatically.
 $file->close();

@@ -14,6 +14,7 @@ my $file1 = IO::File->new("< $fn1") or die "Cannot open file: $!";
 # open fn2 for writing
 my $file2 = IO::File->new("> $fn2") or die "Cannot open output file: $!";
 
+# For windows binary format.
 $file1 -> binmode;
 $file2 -> binmode;
 
