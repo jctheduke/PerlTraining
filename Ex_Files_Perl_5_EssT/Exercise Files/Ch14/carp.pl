@@ -9,5 +9,5 @@ func();
 say "returned from function.";
 
 sub func {
-    die "This is an error message.";
+    croak "This is an error message.";
 }
