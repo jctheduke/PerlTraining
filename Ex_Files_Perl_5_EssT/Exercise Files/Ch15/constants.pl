@@ -4,6 +4,7 @@
 use 5.18.0;
 use warnings;
 
+# Defining constants.
 use constant {
     TRUE => 1,
     FALSE => '',
@@ -12,6 +13,7 @@ use constant {
     PI => atan2(1,1) * 4,
 };
 
+# Definign DEBUG constant.
 use constant DEBUG => TRUE;
 
 if ( DEBUG ) {
@@ -21,3 +23,5 @@ if ( DEBUG ) {
 }
 
 say "Hello, World!";
+
+# Perl does not have a constant, but it has a constant pragma.

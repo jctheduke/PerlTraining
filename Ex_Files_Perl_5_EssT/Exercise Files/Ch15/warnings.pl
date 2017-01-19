@@ -10,6 +10,11 @@ my $x = func();
 say "The result is $x";
 
 sub func {
+#    Turning of warnings for this func
     no warnings;
     return @a[3];
 }
+
+# Strict mode is turned on by default.
+# warning mode is optional.
+
